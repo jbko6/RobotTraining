@@ -2,6 +2,7 @@ package frc.team2412.robot.Subsystems;
 
 import com.revrobotics.CANSparkMax;
 
+import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.team2412.robot.Subsystems.constants.LiftConstants;
 
@@ -33,6 +34,11 @@ public class LiftSubsystem extends SubsystemBase {
 	public void setSpeed(double speed) {
 		leftMotor.set(speed);
 		rightMotor.set(speed);
+	}
+	
+	public void setServo(double angle) {
+		Servo servo = new Servo(0);
+		servo.set(angle);
 	}
 
 }
