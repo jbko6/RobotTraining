@@ -22,7 +22,7 @@ public class Robot extends TimedRobot {
 
 	// Have instances of robot container and OI for easy access
 	private RobotContainer m_RobotContainer = RobotMap.robotContainer;
-	private OI m_OI = RobotMap.robotContainer.m_OI;
+	private OI m_OI = RobotMap.OI;
 
 	/**
 	 * This function is called once when autonomous is started
