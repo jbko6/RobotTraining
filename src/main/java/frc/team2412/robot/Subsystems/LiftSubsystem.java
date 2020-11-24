@@ -17,6 +17,9 @@ public class LiftSubsystem extends SubsystemBase {
 		this.leftMotor = leftMotor;
 		this.rightMotor = rightMotor;
 		this.rightMotor.setInverted(true);
+		
+		double value = 2;
+		System.out.println();
 	}
 
 	public void extend() {
