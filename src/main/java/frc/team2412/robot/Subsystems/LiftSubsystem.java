@@ -8,7 +8,7 @@ public class LiftSubsystem extends SubsystemBase {
 //	private final CANSparkMax rightMotor;
 
 	public LiftSubsystem() {
-		
+
 	}
 
 	public void extend() {
@@ -18,7 +18,7 @@ public class LiftSubsystem extends SubsystemBase {
 	public void withdraw() {
 
 	}
-	
+
 	public void set() {
 
 	}
