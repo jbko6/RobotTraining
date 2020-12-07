@@ -1,5 +1,7 @@
 package frc.team2412.robot;
 
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
+
 import frc.team2412.robot.Subsystems.ExampleSubsystem;
 import frc.team2412.robot.Subsystems.LiftSubsystem;
 
@@ -15,6 +17,8 @@ public class RobotContainer {
 		// create and instance of example subsystem with the id from robot map
 		m_ExampleSubsystem = new ExampleSubsystem(RobotMap.exampleID);
 		
-		liftSubsystem = new LiftSubsystem(RobotMap.rightLiftMotor);
+		WPI_TalonFX pi = new WPI_TalonFX(0);
+		
+		
 	}
 }
