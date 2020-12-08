@@ -9,6 +9,7 @@ public class RobotMap {
 
 	// IDs
 	public static int exampleID = 1;
+
 	private static final int SHOOTER_LEFT_MOTOR_ID = 0;
 	private static final int SHOOTER_RIGHT_MOTOR_ID = 1;
 	public static CANSparkMax shooterLeftMotor = new CANSparkMax(SHOOTER_LEFT_MOTOR_ID, MotorType.kBrushless);
@@ -16,5 +17,14 @@ public class RobotMap {
 
 	// Robot container
 	public static RobotContainer robotContainer = new RobotContainer();
+
 	
+	int motorID = 0;
+	
+	// Robot container
+	public static RobotContainer robotContainer = new RobotContainer();
+	
+	public static OI OI = new OI(robotContainer);
+	
+
 }
