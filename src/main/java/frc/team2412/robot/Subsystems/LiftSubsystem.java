@@ -17,9 +17,7 @@ public class LiftSubsystem extends SubsystemBase {
 		this.leftMotor = leftMotor;
 		this.rightMotor = rightMotor;
 		this.rightMotor.setInverted(true);
-		
-		double value = 2;
-		System.out.println();
+
 	}
 
 	public void extend() {
@@ -33,15 +31,11 @@ public class LiftSubsystem extends SubsystemBase {
 	public void off() {
 		setSpeed(0);
 	}
+
 	
 	public void setSpeed(double speed) {
 		leftMotor.set(speed);
 		rightMotor.set(speed);
-	}
-	
-	public void setServo(double angle) {
-		Servo servo = new Servo(0);
-		servo.set(angle);
-	}
+  }
 
 }
